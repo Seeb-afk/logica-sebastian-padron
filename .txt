@@ -1,0 +1,10 @@
+1) Crea un programa para jugar piedra papel o tijera, que me permita jugar contra la computadora 
+  debe tener un contador de victorias para cada jugar, ademas debe de mostrar un historial de las ultimas 5 partidas.
+  2) Crea un programa que me permita ingresar un string y me devuelva la cantidad de
+  vocales que tiene el string, la cantidad de palabras que tiene, y la cantidad de caracteres que tiene.
+  3) Crea un programa que me permita ingresar un string y me indique cuantas veces se repite cada palabra.
+  4) Crea un programa que el cual me permita ingresar una palabra y me devuelva la palabra
+  invertida
+  5) Crea un programa que me permita verifica si dos palabras son palindromo, es decir, 
+  que se leen de igual forma de izquierda a derecha o de derecha a izquierda.
+  fecha de entrega: 14/08/26
