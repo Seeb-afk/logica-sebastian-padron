@@ -5,14 +5,14 @@ que se leen de igual forma de izquierda a derecha o de derecha a izquierda.
 
 */
 
-let palindromo = "reconocer";
-let palindromo2 = "radar"
-let noPalindromo = "adios";
-let noPalindromo2 = "hola";
+alert("Este programa detecta palíndromos.")
+let palindromo = prompt("Ingresa una palabra: ").toLowerCase();
+
 
 /**
- * Verifica si el valor ingresado es un string
+ * @function isString
  * 
+ * @description Verifica si el valor ingresado es un string
  * @param {undefined} text - Valor a comprobar
  * @returns {boolean} 
  */
@@ -21,8 +21,9 @@ function isString(text) {
 }
 
 /**
- * Devuelve una palabra invertida, desde la ultima letra hasta la primera
+ * @function revertString
  * 
+ * @description Devuelve una palabra invertida, desde la ultima letra hasta la primera
  * @param {string} text - Texto ingresado
  * @param {function} validator - Verifica si el valor ingresado es un string
  * @returns {string} Un nuevo texto invertido
@@ -48,8 +49,9 @@ function revertString(text, validator) {
 }
 
 /**
- * Verifica si la palabra y su versión invertida son iguales
+ * @function isPalindrome
  * 
+ * @description Verifica si la palabra y su versión invertida son iguales
  * @param {string} text - texto original
  * @returns {string} devuelve si es palindromo
  */
@@ -68,20 +70,5 @@ function isPalindrome(text, revert, validator) {
 
 let resultado = isPalindrome(palindromo, revertString, isString);
 
-console.log(`La palabra ingresada es: ${palindromo}`)
-console.log(`${resultado}\n`)
-
-let resultado2 = isPalindrome(palindromo2, revertString, isString);
-
-console.log(`La palabra ingresada es: ${palindromo2}`)
-console.log(`${resultado2}\n`)
-
-let resultado3 = isPalindrome(noPalindromo, revertString, isString);
-
-console.log(`La palabra ingresada es: ${noPalindromo}`)
-console.log(`${resultado3}\n`)
-
-let resultado4 = isPalindrome(noPalindromo2, revertString, isString);
-
-console.log(`La palabra ingresada es: ${noPalindromo2}`)
-console.log(`${resultado4}\n`)
+alert(`La palabra ingresada es: ${palindromo}
+  \n${resultado}`)

@@ -5,13 +5,14 @@ invertida
 
 */
 
-let palabra = "hola";
-let palabra2 = "adios";
-let palabra3 = 43;
+alert("Este programa devuelve una palabra invertida.");
+let palabra = prompt("Ingresa una palabra:").toLowerCase();
+
 
 /**
- * Verifica si el valor ingresado es un string
+ * @function isString
  * 
+ * @description Verifica si el valor ingresado es un string
  * @param {undefined} text - Valor a comprobar
  * @returns {boolean} 
  */
@@ -19,11 +20,13 @@ function isString(text) {
   return text.constructor === String;
 }
 
+
 /**
- * Devuelve una palabra invertida, desde la ultima letra hasta la primera
+ * @function revertString
  * 
+ * @description Devuelve una palabra invertida, desde la ultima letra hasta la primera
  * @param {string} text - Texto ingresado
- * @param {Function} validator - funcion que verifica si el valor ingresado es un string
+ * @param {function} validator - Verifica si el valor ingresado es un string
  * @returns {string} Un nuevo texto invertido
  */
 function revertString(text, validator) {
@@ -42,14 +45,12 @@ function revertString(text, validator) {
   let invertida = lista.toReversed();
   invertida = invertida.join("");
 
-  return invertida
+  return invertida;
 }
 
-let resultado = revertString(palabra, isString);
-let resultado2 = revertString(palabra2, isString);
-let resultado3 = revertString(palabra3, isString);
 
-console.log(resultado);
-console.log(resultado2);
-console.log(resultado3);
+let resultado = revertString(palabra, isString);
+
+alert(`La palabra ingrsada es: ${palabra}
+  \ny su inverso es: ${resultado}`)
 
