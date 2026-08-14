@@ -91,8 +91,20 @@ function victoryCounter(result = " ") {
 
 function historyShow(user = " ", computer = " ") {
 
+
   if (user == " " && computer == " ") {
     
+    if (gameHistory.length == 0) {
+    
+    alert("No se han jugado partidas.")
+    return;
+    }
+    
+    for (let [index, element] of gameHistory.entries()) {
+      alert(`Esta es la partida ${index + 1}.
+        \nEl jugador eligió: ${element.usuario}.
+        \nLa computadora eligió: ${element.computadora}.`)
+    }
     
     return;
   } else {
@@ -102,10 +114,10 @@ function historyShow(user = " ", computer = " ") {
       computadora: computer,
     };
 
-    history.push(game);
+    gameHistory.push(game);
 
-    if (history.length > 5) {
-      history.shift();
+    if (gameHistory.length > 5) {
+      gameHistory.shift();
     }
     return;
   }
@@ -114,7 +126,7 @@ function historyShow(user = " ", computer = " ") {
 let userWinCounter = 0;
 let computerWinCounter = 0;
 let tieCounter = 0;
-let history = []
+let gameHistory = []
 
 do {
   
