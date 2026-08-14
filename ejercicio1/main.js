@@ -151,6 +151,7 @@ do {
     victoryCounter();
   } else if (election == 3) {
 
+    historyShow();
   } else if (election == 4) {
 
     alert("Gracias por jugar.");
