@@ -89,6 +89,13 @@ function victoryCounter(result = " ") {
   }
 }
 
+/**
+ * @function historyShow
+ * 
+ * @description - Muestra al usuario las opciones que escogió y las de la computadora. En caso de que sea llamado desde play, agrega sus elecciones a un object
+ * @param {string} [user=" "] - Elección del usuario
+ * @param {string} [computer=" "] - Elección de la computadora
+ */
 function historyShow(user = " ", computer = " ") {
 
 
