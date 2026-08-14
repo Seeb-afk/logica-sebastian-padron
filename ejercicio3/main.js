@@ -18,6 +18,14 @@ function isString(text) {
   return text.constructor === String;
 }
 
+
+/**
+ * @function wordCounter
+ * 
+ * @param {string} text - texto que contiene las palabras a contar
+ * @param {function} validator - funcion que valida si el valor ingrsado es un String
+ * @returns {Object}
+ */
 function wordCounter(text, validator) {
   
   if ( !(validator(text)) ) {
